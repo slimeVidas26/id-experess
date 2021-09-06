@@ -1,0 +1,23 @@
+{
+  "name": "id-express",
+  "version": "1.0.0",
+  "description": "express-basic-server",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slimeVidas26/id-experess.git"
+  },
+  "author": "isaac dahan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slimeVidas26/id-experess/issues"
+  },
+  "homepage": "https://github.com/slimeVidas26/id-experess#readme"
+}
