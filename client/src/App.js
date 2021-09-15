@@ -1,22 +1,24 @@
-import logo from './logo.svg';
+import { useEffect , useState } from 'react'
+import river from './river.jpg';
 import './App.css';
+import axios from  'axios';
 
 function App() {
+
+   const [image, setImage] = useState(null)
+
+  useEffect(() => {
+   setImage({river})
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={river} className="App-river" alt="river" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        
+      
       </header>
     </div>
   );
