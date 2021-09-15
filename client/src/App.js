@@ -14,11 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={river} className="App-river" alt="river" />
-        <p>
-        </p>
-        
-        
-      
+        <div class="centered">Node + React</div>
       </header>
     </div>
   );
