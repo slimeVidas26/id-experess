@@ -5,16 +5,25 @@ import axios from  'axios';
 
 function App() {
 
-   const [image, setImage] = useState(null)
+   const [user, setUser] = useState(null)
+  //  const [text, setText] = useState(null)
 
   useEffect(() => {
-   setImage({river})
+  axios.get('/api')
+  .then((response)=>{
+    setUser(response.data)
+  })
   }, [])
-  return (
+
+console.log(user)
+// console.log(text)
+  return user && (
     <div className="App">
       <header className="App-header">
         <img src={river} className="App-river" alt="river" />
-        <div class="centered">Node + React</div>
+         <div className="centered">{user.user.login}</div>
+
+
       </header>
     </div>
   );
